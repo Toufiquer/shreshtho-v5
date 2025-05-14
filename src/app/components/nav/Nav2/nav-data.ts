@@ -7,73 +7,74 @@
 */
 const navData = {
   baseInfo: {
-    firstName: 'Tec',
-    lastName: 'Mart',
+    firstName: 'Shreshtho',
+    lastName: '.com',
   },
   about: {
     groupTitle: 'About',
-    fullName: 'Tec Mart',
-    description: ' The best service provider for your business growth.',
+    fullName: 'Shreshtho.com',
+    // Description is a placeholder as specific details were not retrieved
+    description: "Bangladesh's largest online shop offering a wide variety of products.",
     links: [
       {
         id: 1,
-        title: 'Introduction',
-        url: '/',
-        description: 'We are a group of people to solve your problems',
+        title: 'About Us',
+        url: '/about-us', // Assuming a standard URL structure
+        description: 'Learn more about Shreshtho.com',
       },
-      {
-        id: 2,
-        title: 'Installation',
-        url: '/',
-        description: 'We have more then three plan for your business',
-      },
-      {
-        id: 3,
-        title: 'Installation',
-        url: '/',
-        description: 'We have more then three plan for your business',
-      },
+      // Add other relevant about links if known, e.g., careers, terms of service
     ],
   },
   services: {
-    groupTitle: 'Services',
+    groupTitle: 'Shop by Category', // Renamed to better fit e-commerce
     data: [
       {
-        title: 'Supports',
-        href: '/',
-        description: 'A modal dialog that interrupts the user with important content and expects a response.',
+        title: 'Fashion',
+        href: '/category/fashion', // Assuming a standard URL structure
+        description: 'Explore the latest fashion trends.',
       },
       {
-        title: 'Preview',
-        href: '/',
-        description: 'For sighted users to preview content available behind a link.',
+        title: 'Cosmetics',
+        href: '/category/cosmetics',
+        description: 'Find a wide range of cosmetic products.',
       },
       {
-        title: 'Indicator',
-        href: '/',
-        description: 'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
+        title: 'Jewellery',
+        href: '/category/jewellery',
+        description: 'Discover beautiful jewellery pieces.',
       },
       {
-        title: 'Content',
-        href: '/',
-        description: 'Visually or semantically separates content.',
+        title: 'Grocery & Food',
+        href: '/category/grocery-food',
+        description: 'Shop for your daily grocery needs.',
       },
       {
-        title: 'Tabs',
-        href: '/',
-        description: 'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
+        title: 'Sports & Fitness',
+        href: '/category/sports-fitness',
+        description: 'Get your sports and fitness gear.',
       },
       {
-        title: 'Information',
-        href: '/',
-        description: 'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
+        title: 'Home Appliances',
+        href: '/category/home-appliances',
+        description: 'Browse essential home appliances.',
       },
+      {
+        title: 'Electronics',
+        href: '/category/electronics',
+        description: 'Find the latest electronics.',
+      },
+      {
+        title: 'Mobile Phones',
+        href: '/category/mobile-phones',
+        description: 'Shop for mobile phones and accessories.',
+      },
+      // Add more categories if known
     ],
   },
   othersLink: [
-    { id: 1, title: 'Project', url: '/project' },
-    { id: 2, title: 'Blog', url: '/blog' },
-    { id: 3, title: 'Contact', url: '/contact' },
+    // Assuming standard e-commerce links
+    { id: 1, title: 'Contact Us', url: '/contact' }, // Assuming a standard URL structure
+    { id: 2, title: 'FAQ', url: '/faq' }, // Common e-commerce link
   ],
 };
 export default navData;
