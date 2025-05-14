@@ -15,17 +15,21 @@ const CustomNav1 = () => {
   }[];
   const links: links = [
     { name: 'Home', url: '/' },
-    { name: 'Become a Seller', url: '/login' },
-    { name: 'Login to Seller', url: '/login' },
+    { name: 'Route Check', url: '/route-check' },
+    { name: 'RTK', url: '/a__1001_users__' },
+    { name: 'Login', url: '/login' },
+    { name: 'SignUp', url: '/signup' },
+    { name: 'Auth', url: '/auth' },
+    { name: 'Template 6', url: '/template6' },
+    { name: 'Zustand', url: '/zustand' },
+    { name: 'Dashboard', url: '/dashboard' },
   ];
 
   return (
-    <nav className="w-full flex gap-4 items-center justify-center text-center px-4 bg-slate-700 text-slate-400">
-      <div className="w-full lg:w-7xl flex gap-4 items-center justify-end text-center px-4">
-        {links.map((i, idx) => (
-          <CustomLink i={i} key={i.name + idx} />
-        ))}
-      </div>
+    <nav className="w-full flex gap-4 items-center justify-end text-center px-4 bg-slate-700 text-slate-400">
+      {links.map((i, idx) => (
+        <CustomLink i={i} key={i.name + idx} />
+      ))}
     </nav>
   );
 };

@@ -6,14 +6,17 @@
 |-----------------------------------------
 */
 
-import CustomNav1 from '@/app/components/nav/Nav1/CustomNav1';
+import CustomNav3 from '@/app/components/nav/Nav3/CustomNav3';
 import CustomNav2 from '@/app/components/nav/Nav2/CustomNav2';
+import CustomNav1 from '@/app/components/nav/Nav1/CustomNav1';
 
 const Nav = () => {
   const isFixedToTop = true;
   return (
     <>
       <CustomNav1 />
+      <div className="w-full border-b border-slate-500" />
+      <CustomNav3 />
       {isFixedToTop ? (
         <div className="sticky top-0 z-50 w-full bg-opacity-60 md:bg-opacity-40 backdrop-blur bg-slate-100 border-b-1">
           <div className="mx-auto max-w-7xl flex flex-col px-4 text-slate-700">
