@@ -8,3 +8,5 @@ Choose "Web application"
 Add authorized redirect URI: http://localhost:3000/api/auth/callback/google
 Save your Client ID and Client Secret
 Create environment variables file and update GoogleAuthButton component:
+
+https://shreshtho-v5.vercel.app/api/auth/callback/google
