@@ -18,8 +18,11 @@ export async function PUT(req: Request) {
     let token;
     if (result.authType === 'google') {
       const isEmailValid = await checkEmail(result.email);
+      console.log('isEmailValid', isEmailValid);
       if (isEmailValid && checkCredential(result, isEmailValid)) {
+        console.log('inside if');
         token = createJwt(result.email);
+        console.log('token', token);
         return formatResponse(token, result.message || 'success', result.status || 210);
       } else {
         return formatResponse('', 'Data not valid', result.status || 503);
