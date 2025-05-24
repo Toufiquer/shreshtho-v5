@@ -1,3 +1,4 @@
+import connectDB from '@/lib/mongoose';
 import { formatResponse, IResponse } from '@/app/api/utils/jwt-verify';
 import { createJwt } from '@/app/api/utils/jwt-utils';
 import { handleRateLimit } from '@/app/api/utils/rate-limit';
@@ -11,6 +12,8 @@ export async function PUT(req: Request) {
   const rateLimitResponse = handleRateLimit(req);
   if (rateLimitResponse) return rateLimitResponse;
   try {
+    await connectDB();
+    console.log('inside try ');
     const result = await req.json();
     let token;
     if (result.authType === 'google') {
