@@ -15,6 +15,7 @@ export async function PUT(req: Request) {
     await connectDB();
     console.log('inside try ');
     const result = await req.json();
+    console.log('result', result);
     let token;
     if (result.authType === 'google') {
       const isEmailValid = await checkEmail(result.email);
@@ -29,6 +30,7 @@ export async function PUT(req: Request) {
       }
     }
   } catch (err) {
+    console.log('error start here status 502');
     console.log('err', err);
     const result: IResponse = { data: [], message: 'some thing wrong', status: 502 };
     return formatResponse(result.data, result.message, result.status);

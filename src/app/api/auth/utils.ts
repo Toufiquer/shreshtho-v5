@@ -5,6 +5,8 @@ export async function checkEmail(email: string) {
   await connectDB();
   console.log('inside check mail');
   const authRecord = await Users.findOne({ email });
+  console.log('authRecord,', authRecord);
+  console.log('email : ', email);
   console.log('end check mail');
   return authRecord;
 }
