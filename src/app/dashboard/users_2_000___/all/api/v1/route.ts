@@ -17,8 +17,8 @@ export async function GET(req: Request) {
   const rateLimitResponse = handleRateLimit(req);
   if (rateLimitResponse) return rateLimitResponse;
 
-  const tokenResponse = handleTokenVerify(req);
-  if (tokenResponse) return tokenResponse;
+  // const tokenResponse = handleTokenVerify(req);
+  // if (tokenResponse) return tokenResponse;
 
   const authenticationResponse = verifyAuthAndRole('GET', req);
   if (authenticationResponse) return authenticationResponse;

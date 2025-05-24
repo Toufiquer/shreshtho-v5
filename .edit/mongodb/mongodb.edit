@@ -1,0 +1,7 @@
+1. https://www.mongodb.com/ [login]
+2. Organization Overview -> create a project
+3. create cluster in side that project and deploy
+4. create userName and password
+5. Update ip address 
+      a. Database access -> Username and password
+      b. Network access -> ip address

@@ -56,7 +56,7 @@ export default function AuthCheckingComponent({ redirectUrl = '/' as string, chi
             fixedKey: process.env.NEXT_PUBLIC_ACCESS_FIXED_KEY,
           };
           console.log('reqData', reqData);
-          const response = await fetch('http://localhost:3000/api/auth/get-token', {
+          const response = await fetch('https://shreshtho-v5.vercel.app/api/auth/get-token', {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',
