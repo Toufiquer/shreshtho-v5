@@ -18,8 +18,10 @@ export function createJwt(email: string): string {
   }
 
   const payload: JwtPayload = { email };
-
+  console.log('before token');
   const token = jwt.sign(payload, jwtSecret, { expiresIn: '3d' });
+  console.log('after token');
+  console.log('Generated JWT:', token);
   return token;
 }
 
