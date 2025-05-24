@@ -8,73 +8,82 @@
 const navData = {
   baseInfo: {
     firstName: 'Shreshtho',
-    lastName: '.com',
+    lastName: '',
   },
   about: {
     groupTitle: 'About',
-    fullName: 'Shreshtho.com',
-    // Description is a placeholder as specific details were not retrieved
-    description: "Bangladesh's largest online shop offering a wide variety of products.",
+    fullName: 'Shreshtho',
+    description: 'A digital online company to sell various products like cloth, computer, beauty, kids, and much more.',
     links: [
       {
         id: 1,
-        title: 'About Us',
-        url: '/about-us', // Assuming a standard URL structure
-        description: 'Learn more about Shreshtho.com',
+        title: 'Introduction',
+        url: '/',
+        description: 'We are a group of people to solve your problems',
       },
-      // Add other relevant about links if known, e.g., careers, terms of service
+      {
+        id: 2,
+        title: 'Our Products',
+        url: '/',
+        description: 'We offer a wide range of products including cloth, computer, beauty, and kids items.',
+      },
+      {
+        id: 3,
+        title: 'More About Us',
+        url: '/',
+        description: 'Learn more about our company and our commitment to quality.',
+      },
     ],
   },
   services: {
-    groupTitle: 'Shop by Category', // Renamed to better fit e-commerce
+    groupTitle: 'Services',
     data: [
       {
-        title: 'Fashion',
-        href: '/category/fashion', // Assuming a standard URL structure
-        description: 'Explore the latest fashion trends.',
+        title: 'Cash on Delivery',
+        href: '/',
+        description: 'Enjoy the convenience of paying for your order upon delivery.',
       },
       {
-        title: 'Cosmetics',
-        href: '/category/cosmetics',
-        description: 'Find a wide range of cosmetic products.',
+        title: 'Best Products',
+        href: '/',
+        description: 'We are committed to providing you with the highest quality products.',
       },
       {
-        title: 'Jewellery',
-        href: '/category/jewellery',
-        description: 'Discover beautiful jewellery pieces.',
+        title: 'Supports',
+        href: '/',
+        description: 'A modal dialog that interrupts the user with important content and expects a response.',
       },
       {
-        title: 'Grocery & Food',
-        href: '/category/grocery-food',
-        description: 'Shop for your daily grocery needs.',
+        title: 'Preview',
+        href: '/',
+        description: 'For sighted users to preview content available behind a link.',
       },
       {
-        title: 'Sports & Fitness',
-        href: '/category/sports-fitness',
-        description: 'Get your sports and fitness gear.',
+        title: 'Indicator',
+        href: '/',
+        description: 'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
       },
       {
-        title: 'Home Appliances',
-        href: '/category/home-appliances',
-        description: 'Browse essential home appliances.',
+        title: 'Content',
+        href: '/',
+        description: 'Visually or semantically separates content.',
       },
       {
-        title: 'Electronics',
-        href: '/category/electronics',
-        description: 'Find the latest electronics.',
+        title: 'Tabs',
+        href: '/',
+        description: 'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
       },
       {
-        title: 'Mobile Phones',
-        href: '/category/mobile-phones',
-        description: 'Shop for mobile phones and accessories.',
+        title: 'Information',
+        href: '/',
+        description: 'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
       },
-      // Add more categories if known
     ],
   },
   othersLink: [
-    // Assuming standard e-commerce links
-    { id: 1, title: 'Contact Us', url: '/contact' }, // Assuming a standard URL structure
-    { id: 2, title: 'FAQ', url: '/faq' }, // Common e-commerce link
+    { id: 1, title: 'Top Sells', url: '/top-sells' },
+    { id: 2, title: 'Blog', url: '/blog' },
+    { id: 3, title: 'Contact', url: '/contact' },
   ],
 };
 export default navData;

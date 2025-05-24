@@ -19,8 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <AuthCheckingComponent redirectUrl="/dashboard">
-      {/* <SiteNavLayoutClickV1> {children}</SiteNavLayoutClickV1>
-      <SiteNavLayoutClickV2> {children}</SiteNavLayoutClickV2> */}
+      {/* <SiteNavLayoutClickV1> {children}</SiteNavLayoutClickV1> */}
+      {/* <SiteNavLayoutClickV2> {children}</SiteNavLayoutClickV2> */}
       <SiteNavLayoutClickV3> {children}</SiteNavLayoutClickV3>
       {/* <SiteNavLayoutClickV4> {children}</SiteNavLayoutClickV4> */}
     </AuthCheckingComponent>

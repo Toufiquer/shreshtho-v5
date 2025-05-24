@@ -10,9 +10,8 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LINKS } from './Nav3/CustomNav3';
 
-const CustomLink = ({ i }: { i: LINKS }) => {
+const CustomLink = ({ i }: { i: { name: string; url: string } }) => {
   const pathname = usePathname();
   const currPath = pathname.split('/')[1];
   const iPath = i.url.split('/')[1];
@@ -20,7 +19,7 @@ const CustomLink = ({ i }: { i: LINKS }) => {
   const pathStyle = currPath === iPath ? ' text-white ' : ' text-slate-400 ';
   return (
     <Link key={i.name} className={` my-2 hover:underline cursor-pointer ${pathStyle}`} href={i.url}>
-      {i.name} {i.lastDash && <span className="ml-3">|</span>}
+      {i.name}
     </Link>
   );
 };

@@ -33,7 +33,7 @@ export function ShadCNNavTablet() {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent border-0">{groupTitle}</NavigationMenuTrigger>
-          <NavigationMenuContent className="bg-transparent backdrop-blue">
+          <NavigationMenuContent className="bg-slate-100">
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
@@ -61,7 +61,7 @@ export function ShadCNNavTablet() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent border-0">{services.groupTitle}</NavigationMenuTrigger>
-          <NavigationMenuContent className="bg-transparent backdrop-blue">
+          <NavigationMenuContent className="bg-slate-100">
             <ul className="grid w-[300px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[600px] ">
               {services.data.map(component => (
                 <ListItem key={component.title} title={component.title} href={component.href}>
